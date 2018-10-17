@@ -46,7 +46,7 @@ def extract_boot_files(workdir, imgfile):
         arquivos = (
                 "kernel7.img",
                 "bcm2709-rpi-2-b.dtb",
-                #"cmdline.txt",
+                "cmdline.txt",
                 )
         subprocess.run(("sudo", "cp",
             *(os.path.join(mountdir, a) for a in arquivos),
